@@ -13,7 +13,6 @@ services:
       #- ./raddb/clients.conf:/etc/freeradius/3.0/clients.conf # Mount the local radius-config directory to the container's config directory
       #- ./raddb/users:/etc/freeradius/3.0/users
       #- ./radius-logs:/var/log/freeradius # Mount the local radius-logs directory to the container's log directory
-      
     environment:
       - RADIUS_LISTEN_IPV6=off # Example environment variable to disable IPv6
     restart: unless-stopped

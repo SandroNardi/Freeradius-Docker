@@ -1,8 +1,3 @@
 user Cleartext-Password := "password"
         Tunnel-Password = test
 
-uservlan Cleartext-Password := "password"
-        Tunnel-Password = secret
-        Tunnel-Type = "VLAN",
-        Tunnel-Medium-Type = 6,
-        Tunnel-Private-Group-ID = 4

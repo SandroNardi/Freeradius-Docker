@@ -4,7 +4,7 @@
 
 CERTS_DIR="/certs"
 # USERS_DIR="$CONFIG_dir/mods-config/files/authorize"
-
+mkdir -p "$CERTS_DIR"
 
 # Generate self-signed SSL certificates
 openssl req -x509 -newkey rsa:2048 -keyout "$CERTS_DIR/ssl-cert-snakeoil.key" -out "$CERTS_DIR/ssl-cert-snakeoil.pem" -days 365 -nodes -subj "/CN=freeradius"

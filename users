@@ -3,7 +3,6 @@ user Cleartext-Password := "password"
 
 user4vlan Cleartext-Password := "password2"
         Tunnel-Password = secret2
-        Tunnel-Type = "VLAN"
         Tunnel-Medium-Type = 6
         Tunnel-Private-Group-ID = 4
        

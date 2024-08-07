@@ -6,8 +6,8 @@ services:
       - "1812:1812/udp" # RADIUS authentication port
       - "1813:1813/udp" # RADIUS accounting port
     volumes:
-      - .clients.conf:/etc/freeradius/3.0/clients.conf
-      - .users:/etc/freeradius/3.0/users
+      - ./clients.conf:/etc/freeradius/3.0/clients.conf
+      - ./users:/etc/freeradius/3.0/users
       #- ./raddb/clients.conf:/etc/freeradius/3.0/clients.conf # Mount the local radius-config directory to the container's config directory
       #- ./raddb/users:/etc/freeradius/3.0/users
       #- ./radius-logs:/var/log/freeradius # Mount the local radius-logs directory to the container's log directory

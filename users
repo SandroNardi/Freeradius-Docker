@@ -3,4 +3,5 @@ user Cleartext-Password := "password"
 
 user4vlan Cleartext-Password := "password2"
         Tunnel-Password = secret2
+        Filter-ID = "policy"
        

@@ -1,6 +1,7 @@
-test Cleartext-Password := "password"
+user Cleartext-Password := "password"
         Tunnel-Password = test
-testvlan Cleartext-Password := "password"
+uservlan 4 Cleartext-Password := "password"
         Tunnel-Type = "VLAN",
         Tunnel-Medium-Type = 6,
         Tunnel-Private-Group-ID = 4
+        Filter-Id="test"

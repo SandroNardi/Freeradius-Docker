@@ -1,0 +1,18 @@
+services:
+  freeradius:
+    image: tgbyte/freeradius:latest-arm64
+    container_name: freeradius
+    ports:
+      - "1812:1812/udp" # RADIUS authentication port
+      - "1813:1813/udp" # RADIUS accounting port
+    volumes:
+      - .clients.conf:/etc/freeradius/3.0/clients.conf
+      - .users:/etc/freeradius/3.0/users
+      #- ./raddb/clients.conf:/etc/freeradius/3.0/clients.conf # Mount the local radius-config directory to the container's config directory
+      #- ./raddb/users:/etc/freeradius/3.0/users
+      #- ./radius-logs:/var/log/freeradius # Mount the local radius-logs directory to the container's log directory
+      #- ./raddb/certs/ssl-cert-snakeoil.key:/etc/ssl/private/ssl-cert-snakeoil.key # Mount the generated private key
+      #- ./raddb/certs/ssl-cert-snakeoil.pem:/etc/ssl/certs/ssl-cert-snakeoil.pem # Mount the generated certificate
+    environment:
+      - RADIUS_LISTEN_IPV6=off # Example environment variable to disable IPv6
+    restart: unless-stopped

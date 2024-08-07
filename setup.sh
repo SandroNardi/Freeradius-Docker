@@ -2,7 +2,7 @@
 
 # Define the directory names
 
-CERTS_DIR="/certs"
+CERTS_DIR="certs"
 # USERS_DIR="$CONFIG_dir/mods-config/files/authorize"
 mkdir -p "$CERTS_DIR"
 

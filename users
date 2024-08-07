@@ -1,3 +1,6 @@
 user Cleartext-Password := "password"
         Tunnel-Password = test
 
+user4vlan Cleartext-Password := "password2"
+        Tunnel-Password = secret2
+       

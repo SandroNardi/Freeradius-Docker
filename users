@@ -1,10 +1,13 @@
 user Cleartext-Password := "password"
-        Tunnel-Password = test
+Tunnel-Password = test
 
-user4vlan Cleartext-Password := "password2"
-        Tunnel-Password = secret2,
-        Tunnel-Medium-Type = "IEEE-802",
-        Tunnel-Type = "VLAN",
-        Tunnel-Private-Group-Id = "4"
+user4vlan Cleartext-Password := "password"
+Tunnel-Password = secret2,
+Tunnel-Medium-Type = "IEEE-802",
+Tunnel-Type = "VLAN",
+Tunnel-Private-Group-Id = "4"
         
+userfilt Cleartext-Password := "password"
+Tunnel-Password = secret2,
+Filter-ID = "guest"
        

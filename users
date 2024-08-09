@@ -15,6 +15,6 @@ user4vlan Cleartext-Password := "password"
     Tunnel-Password = secret,
     Tunnel-Medium-Type = "IEEE-802",
     Tunnel-Type = "VLAN",
-    Tunnel-Private-Group-Id = "4"
+    Tunnel-Private-Group-Id = "4",
     Filter-Id = "guest"
 

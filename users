@@ -11,7 +11,7 @@ userfilt Cleartext-Password := "password"
     Tunnel-Password = secret,
     Filter-Id = "guest"
 
-user4vlan Cleartext-Password := "password"
+user3 Cleartext-Password := "password"
     Tunnel-Password = secret,
     Tunnel-Medium-Type = "IEEE-802",
     Tunnel-Type = "VLAN",
